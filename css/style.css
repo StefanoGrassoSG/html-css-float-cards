@@ -15,6 +15,12 @@
     margin: auto;
 }
 
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 
 /*CONTENT*/
 header {
@@ -28,6 +34,26 @@ header {
     text-align: center;
     color: rgb(54, 51, 51);
     font-size: 1.2em;
+}
+
+.main-row {
+    width: 100%;
+}
+
+.cards {
+    width: calc(100% / 3);
+    height: 100px;
+}
+
+.photos, .data, img, .cards {
+    float: left;
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+
+.data {
+    padding: 15px;
 }
 /*DEBUG*/
 .debug
